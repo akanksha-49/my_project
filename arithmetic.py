@@ -1,23 +1,12 @@
-def add(a, b):
-    return a + b
+import sys
 
-def sub(a, b):
-    return a - b
+if len(sys.argv) < 3:
+    print("Usage: python arithmetic.py <first_number> <second_number>")
+    sys.exit(1)
 
-def mul(a, b):
-    return a * b
+a = float(sys.argv[1])
+b = float(sys.argv[2])
 
-def div(a, b):
-    if b != 0:
-        return a / b
-    else:
-        return "Give Correct Input"
-
-print("Give The Inputs")
-a = float(input("First Number: "))
-b = float(input("Second Number: "))
-
-print("Addition Of Numbers:", add(a, b))
-print("Subtraction Of Numbers:", sub(a, b))
-print("Multiplication of Numbers:", mul(a, b))
-print("Division Of Numbers:", div(a, b))
+print(f"First Number: {a}")
+print(f"Second Number: {b}")
+print(f"Sum: {a + b}")
