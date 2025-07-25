@@ -9,4 +9,13 @@ b = float(sys.argv[2])
 
 print(f"First Number: {a}")
 print(f"Second Number: {b}")
+
 print(f"Sum: {a + b}")
+print(f"Difference: {a - b}")
+print(f"Product: {a * b}")
+
+# Handle division by zero
+if b != 0:
+    print(f"Quotient: {a / b}")
+else:
+    print("Quotient: Error! Division by zero.")
